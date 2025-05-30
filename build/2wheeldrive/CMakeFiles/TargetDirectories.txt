@@ -1,0 +1,9 @@
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/uninstall.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/2wheeldrive_uninstall.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/test.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/edit_cache.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/rebuild_cache.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/list_install_components.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/install.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/install/local.dir
+/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/CMakeFiles/install/strip.dir
