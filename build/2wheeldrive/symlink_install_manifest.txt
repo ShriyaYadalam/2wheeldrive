@@ -37,6 +37,13 @@
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest_build/events.log
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest_build/logger_all.log
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/nav2_params.yaml
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/create_test_map.py
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/mapfinal.pgm
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/mapfinal.yaml
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/test_map.pgm
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/test_map.yaml
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/worlds/world1.world
+/home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/lib/2wheeldrive/send_goal.py
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/ament_index/resource_index/package_run_dependencies/2wheeldrive
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/ament_index/resource_index/parent_prefix_path/2wheeldrive
 /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/environment/ament_prefix_path.sh

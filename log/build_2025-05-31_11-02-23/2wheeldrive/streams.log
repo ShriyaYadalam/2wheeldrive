@@ -1,0 +1,76 @@
+[0.008s] Invoking command in '/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shriya/ros2_ws/install/visualization_pkg:/home/shriya/ros2_ws/install/student_service_pkg:/home/shriya/ros2_ws/install/student_publisher_pkg:/home/shriya/ros2_ws/install/my_robot_description:/home/shriya/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive -- -j20 -l20
+[0.040s] Invoked command in '/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shriya/ros2_ws/install/visualization_pkg:/home/shriya/ros2_ws/install/student_service_pkg:/home/shriya/ros2_ws/install/student_publisher_pkg:/home/shriya/ros2_ws/install/my_robot_description:/home/shriya/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive -- -j20 -l20
+[0.051s] Invoking command in '/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shriya/ros2_ws/install/visualization_pkg:/home/shriya/ros2_ws/install/student_service_pkg:/home/shriya/ros2_ws/install/student_publisher_pkg:/home/shriya/ros2_ws/install/my_robot_description:/home/shriya/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive
+[0.060s] -- Install configuration: ""
+[0.061s] -- Execute custom install script
+[0.061s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/src/2wheeldrive.urdf
+[0.061s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/launch/display.launch.py
+[0.061s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/launch/localization.launch.py
+[0.062s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/launch/nav2_launch.py
+[0.062s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/rviz/config.rviz
+[0.062s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[0.062s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[0.063s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[0.063s]   Use the cmake_policy command to set the policy and suppress this warning.
+[0.063s] Call Stack (most recent call first):
+[0.063s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[0.063s]   cmake_install.cmake:46 (include)
+[0.063s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.063s] [0m
+[0.063s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/amcl.yaml
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/build/.built_by
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/build/COLCON_IGNORE
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/ekf.yaml
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/.colcon_install_layout
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/COLCON_IGNORE
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/_local_setup_util_ps1.py
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/_local_setup_util_sh.py
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/local_setup.bash
+[0.064s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/local_setup.ps1
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/local_setup.sh
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/local_setup.zsh
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/setup.bash
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/setup.ps1
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/setup.sh
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/install/setup.zsh
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/COLCON_IGNORE
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_11-30-01/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_11-30-01/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_11-59-31/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_11-59-31/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-01-57/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-01-57/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-10-23/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-10-23/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-24-30/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-24-30/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-24-48/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/build_2025-05-27_12-24-48/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest/events.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest/logger_all.log
+[0.065s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest_build/events.log
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/log/latest_build/logger_all.log
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/config/nav2_params.yaml
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/create_test_map.py
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/mapfinal.pgm
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/mapfinal.yaml
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/test_map.pgm
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/maps/test_map.yaml
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/worlds/world1.world
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/lib/2wheeldrive/send_goal.py
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/ament_index/resource_index/package_run_dependencies/2wheeldrive
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/ament_index/resource_index/parent_prefix_path/2wheeldrive
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/environment/ament_prefix_path.sh
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/environment/path.dsv
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/local_setup.bash
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/local_setup.sh
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/local_setup.zsh
+[0.066s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/local_setup.dsv
+[0.066s] -- Symlinking: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/package.dsv
+[0.074s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/ament_index/resource_index/packages/2wheeldrive
+[0.075s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/cmake/2wheeldriveConfig.cmake
+[0.075s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/cmake/2wheeldriveConfig-version.cmake
+[0.075s] -- Up-to-date symlink: /home/shriya/ros2_ws/src/2wheeldrive/install/2wheeldrive/share/2wheeldrive/package.xml
+[0.077s] Invoked command in '/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/shriya/ros2_ws/install/visualization_pkg:/home/shriya/ros2_ws/install/student_service_pkg:/home/shriya/ros2_ws/install/student_publisher_pkg:/home/shriya/ros2_ws/install/my_robot_description:/home/shriya/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive

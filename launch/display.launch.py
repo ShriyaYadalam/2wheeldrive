@@ -307,7 +307,7 @@ def generate_launch_description():
                              description='Absolute path to robot model file'),
         DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, 
                              description='Absolute path to rviz config file'),
-        DeclareLaunchArgument(name='use_sim_time', default_value='True', 
+        DeclareLaunchArgument(name='use_sim_time', default_value='True',
                              description='Flag to enable use_sim_time'),
         
         # Start Gazebo and robot first 
@@ -318,7 +318,7 @@ def generate_launch_description():
         joint_state_publisher_node,   
         joint_state_publisher_gui_node, 
         spawn_entity,
-        rviz_node, 
+        rviz_node,   
         robot_localization_node, 
 
         # static_tf_map_odom, 

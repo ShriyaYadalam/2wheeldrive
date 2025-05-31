@@ -310,8 +310,11 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/2wheeldrive")
-ament_cmake_symlink_install_directory("/home/shriya/ros2_ws/src/2wheeldrive" DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/2wheeldrive")
+# install(DIRECTORY "src" "launch" "rviz" "config" "maps" "worlds" "DESTINATION" "share/2wheeldrive")
+ament_cmake_symlink_install_directory("/home/shriya/ros2_ws/src/2wheeldrive" DIRECTORY "src" "launch" "rviz" "config" "maps" "worlds" "DESTINATION" "share/2wheeldrive")
+
+# install(PROGRAMS "goals/send_goal.py" "DESTINATION" "lib/2wheeldrive")
+ament_cmake_symlink_install_programs("/home/shriya/ros2_ws/src/2wheeldrive" PROGRAMS "goals/send_goal.py" "DESTINATION" "lib/2wheeldrive")
 
 # install(FILES "/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/2wheeldrive" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/shriya/ros2_ws/src/2wheeldrive" FILES "/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/2wheeldrive" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
