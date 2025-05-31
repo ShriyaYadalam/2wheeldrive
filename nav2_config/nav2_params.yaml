@@ -5,8 +5,8 @@ amcl:
     alpha2: 0.2
     alpha3: 0.2
     alpha4: 0.2
-    alpha5: 0.2
-    base_frame_id: "base_footprint"
+    alpha5: 0.2 #noise parameters 
+    base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -113,7 +113,7 @@ controller_server:
   ros__parameters:
     use_sim_time: True
     controller_frequency: 20.0
-    min_x_velocity_threshold: 0.001
+    min_x_velocity_threshold: 0.01
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001
     failure_tolerance: 0.3
@@ -129,14 +129,14 @@ controller_server:
     # Goal checker parameters
     #precise_goal_checker:
     #  plugin: "nav2_controller::SimpleGoalChecker"
-    #  xy_goal_tolerance: 0.25
+    #  xy_goal_tolerance: 0.25 
     #  yaw_goal_tolerance: 0.25
     #  stateful: True
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.4
+      yaw_goal_tolerance: 0.4  
     # DWB parameters
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
@@ -178,6 +178,7 @@ controller_server:
       GoalDist.scale: 24.0
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
+      Oscillation.scale: 1.0 
       RotateToGoal.lookahead_time: -1.0
 
 local_costmap:
@@ -275,13 +276,13 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0  
+    expected_planner_frequency: 20.0
     use_sim_time: True
     planner_plugins: ["GridBased"]
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
       tolerance: 0.5
-      use_astar: false
+      use_astar: true 
       allow_unknown: true
 
 smoother_server:
@@ -318,6 +319,9 @@ behavior_server:
     max_rotational_vel: 1.0
     min_rotational_vel: 0.4
     rotational_acc_lim: 3.2
+    backup_dist: 0.4 
+    backup_speed: 0.1
+    spin_dist: 1.57 
 
 robot_state_publisher:
   ros__parameters:
@@ -327,7 +331,7 @@ waypoint_follower:
   ros__parameters:
     use_sim_time: True
     loop_rate: 20
-    stop_on_failure: false
+    stop_on_failure: false 
     waypoint_task_executor_plugin: "wait_at_waypoint"
     wait_at_waypoint:
       plugin: "nav2_waypoint_follower::WaitAtWaypoint"

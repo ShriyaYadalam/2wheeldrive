@@ -298,16 +298,16 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': True}], 
         arguments=['-d', LaunchConfiguration('rvizconfig')],
-    )
+    ) 
 
-    return LaunchDescription([
+    return LaunchDescription([ 
         DeclareLaunchArgument(name='gui', default_value='True', 
                              description='Flag to enable joint_state_publisher_gui'),
         DeclareLaunchArgument(name='model', default_value=default_model_path, 
                              description='Absolute path to robot model file'),
         DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, 
                              description='Absolute path to rviz config file'),
-        DeclareLaunchArgument(name='use_sim_time', default_value='True',
+        DeclareLaunchArgument(name='use_sim_time', default_value='True',  
                              description='Flag to enable use_sim_time'),
         
         # Start Gazebo and robot first 
