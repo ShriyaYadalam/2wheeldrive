@@ -51,7 +51,7 @@
 #         arguments=['-d', LaunchConfiguration('rvizconfig')],
 #     )
 
-#     spawn_entity = Node(
+#     spawn_entity = Node(  
 #     package='gazebo_ros',
 #     executable='spawn_entity.py',
 #     parameters=[{'use_sim_time': True}],
@@ -180,7 +180,7 @@ def generate_launch_description():
     joint_state_publisher_node = Node(
         package='joint_state_publisher',
         executable='joint_state_publisher',
-        name='joint_state_publisher',
+        name='joint_state_publisher',  
         parameters=[{
             'robot_description': ParameterValue(Command(['xacro ', default_model_path]), value_type=str),
             'use_sim_time': True
@@ -204,7 +204,26 @@ def generate_launch_description():
         output='screen'
     )
 
-    map_server = Node(
+    cmd_vel_bridge = Node( 
+    package='topic_tools',
+    executable='relay',
+    name='cmd_vel_bridge',
+    arguments=['/cmd_vel', '/demo/cmd_vel'],
+    parameters=[{'use_sim_time': True}],
+    output='screen'
+    ) 
+
+    relay_odom = Node(
+    package='topic_tools',
+    executable='relay',
+    name='odom_relay',
+    arguments=['/demo/odom', '/odom'],
+    parameters=[{'use_sim_time': True}],
+    output='screen'  
+)
+
+
+    map_server = Node( 
         package='nav2_map_server',
         executable='map_server',
         name='map_server',
@@ -268,7 +287,7 @@ def generate_launch_description():
         parameters=[{
             'use_sim_time': True,
             'autostart': True, 
-            'node_names': ['map_server', 'amcl']
+            'node_names': ['map_server', 'amcl']   
         }]
     )
 
@@ -293,12 +312,16 @@ def generate_launch_description():
         
         # Start Gazebo and robot first 
         gaz, 
+        cmd_vel_bridge,
+        relay_odom, 
         robot_state_publisher_node,
         joint_state_publisher_node,   
         joint_state_publisher_gui_node, 
         spawn_entity,
         rviz_node, 
-        # static_tf_map_odom,
+        robot_localization_node, 
+
+        # static_tf_map_odom, 
           
         # Start navigation nodes with delay    
         TimerAction( 
@@ -310,6 +333,6 @@ def generate_launch_description():
             period=5.0,  
             actions=[map_server, amcl]
         )
-        
+          
     ])
   
