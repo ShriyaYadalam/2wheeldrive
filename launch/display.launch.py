@@ -179,7 +179,7 @@ def generate_launch_description():
 
     joint_state_publisher_node = Node(
         package='joint_state_publisher',
-        executable='joint_state_publisher',
+        executable='joint_state_publisher', 
         name='joint_state_publisher',  
         parameters=[{
             'robot_description': ParameterValue(Command(['xacro ', default_model_path]), value_type=str),
@@ -200,7 +200,7 @@ def generate_launch_description():
         package='gazebo_ros',
         executable='spawn_entity.py',
         parameters=[{'use_sim_time': True}],
-        arguments=['-entity', '2wheeldrive', '-topic', 'robot_description', '-x', '10', '-y', '10'],
+        arguments=['-entity', '2wheeldrive', '-topic', 'robot_description', '-x', '-5', '-y', '-5'],
         output='screen'
     )
 
@@ -298,7 +298,7 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': True}], 
         arguments=['-d', LaunchConfiguration('rvizconfig')],
-    ) 
+    )  
 
     return LaunchDescription([ 
         DeclareLaunchArgument(name='gui', default_value='True', 
