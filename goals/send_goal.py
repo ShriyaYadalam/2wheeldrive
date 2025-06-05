@@ -26,7 +26,7 @@ class GoalSender(Node):
         # Orientation: no rotation (optional but safer)
         qx, qy, qz, qw = quaternion_from_euler(0, 0, 0)
         goal_msg.pose.pose.orientation.x = qx
-        goal_msg.pose.pose.orientation.y = qy
+        goal_msg.pose.pose.orientation.y = qy 
         goal_msg.pose.pose.orientation.z = qz
         goal_msg.pose.pose.orientation.w = qw
 
