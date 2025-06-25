@@ -1,1 +1,0 @@
-/home/shriya/ros2_ws/src/2wheeldrive/goals/send_goal.py

@@ -8,7 +8,7 @@
 <license>TODO: License declaration</license>
 
 <buildtool_depend>ament_cmake</buildtool_depend>
-
+<depend>amr_urdf_v3</depend>
 
 <!-- Existing dependencies -->
 <exec_depend>joint_state_publisher</exec_depend>

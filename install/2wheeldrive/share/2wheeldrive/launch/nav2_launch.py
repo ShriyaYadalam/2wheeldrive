@@ -1,1 +1,0 @@
-/home/shriya/ros2_ws/src/2wheeldrive/launch/nav2_launch.py

@@ -5,7 +5,7 @@ amcl:
     alpha2: 0.2
     alpha3: 0.2
     alpha4: 0.2
-    alpha5: 0.2 #noise parameters 
+    alpha5: 0.2 #NOISE PARAMETERS
     base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
@@ -125,7 +125,7 @@ controller_server:
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
       required_movement_radius: 0.5
-      movement_time_allowance: 10.0
+      movement_time_allowance: 8.0 #10.0
     # Goal checker parameters
     #precise_goal_checker:
     #  plugin: "nav2_controller::SimpleGoalChecker"
@@ -134,18 +134,20 @@ controller_server:
     #  stateful: True
     general_goal_checker:
       stateful: True
-      plugin: "nav2_controller::SimpleGoalChecker"
+      plugin: "nav2_controller::StoppedGoalChecker" #
       xy_goal_tolerance: 0.4
-      yaw_goal_tolerance: 0.4  
+
+
     # DWB parameters
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
+        #Tried out TEB as well but faced issues like - too jittery, too many params 
       debug_trajectory_details: True
-      min_vel_x: 0.0
-      min_vel_y: 0.0
+      min_vel_x: -0.2 #ENABLING BACKWARD MOTION
+      min_vel_y: 0.0 
       max_vel_x: 0.26
-      max_vel_y: 0.0  
-      max_vel_theta: 1.0
+      max_vel_y: 0.0
+      max_vel_theta: 0.8 #1
       min_speed_xy: 0.0
       max_speed_xy: 0.26
       min_speed_theta: 0.0
@@ -160,22 +162,23 @@ controller_server:
       vx_samples: 20
       vy_samples: 5
       vtheta_samples: 20
-      sim_time: 1.7
+      sim_time: 0.8 #SHORTER SIM TIME -> LESSER OVERTHINKING 
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
-      xy_goal_tolerance: 0.4
-      trans_stopped_velocity: 0.25  
+      xy_goal_tolerance: 0.4 #0.4
+      trans_stopped_velocity: 0.02 #0.25 lol L
+      rot_stopped_velocity: 0.01 
       short_circuit_trajectory_evaluation: True
       stateful: True
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
       BaseObstacle.scale: 0.02
-      PathAlign.scale: 32.0
+      PathAlign.scale: 32.0 
       PathAlign.forward_point_distance: 0.1
-      GoalAlign.scale: 24.0
+      GoalAlign.scale: 40.0 #TO PRIORITIZE ALIGNING TO GOAL OVER PATH
       GoalAlign.forward_point_distance: 0.1
       PathDist.scale: 32.0
-      GoalDist.scale: 24.0
+      GoalDist.scale: 40.0
       RotateToGoal.scale: 32.0
       RotateToGoal.slowing_factor: 5.0
       Oscillation.scale: 1.0 
@@ -280,9 +283,10 @@ planner_server:
     use_sim_time: True  
     planner_plugins: ["GridBased"]
     GridBased: 
-      plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5
-      use_astar: true 
+      plugin: "nav2_navfn_planner/NavfnPlanner" 
+        #Tried using SMAC - but had several issues - Took longer to compute paths, no valid path found several times, more spins, overly convoluted paths
+      tolerance: 0.5 #MIGHT HAVE TO DECREASE
+      use_astar: false 
       allow_unknown: true
 
 smoother_server: 

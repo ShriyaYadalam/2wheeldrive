@@ -10,12 +10,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(amr_urdf_v3 REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 install(
-  DIRECTORY src launch rviz config maps worlds 
+  DIRECTORY src launch rviz config maps worlds
   DESTINATION share/${PROJECT_NAME}
 )
 

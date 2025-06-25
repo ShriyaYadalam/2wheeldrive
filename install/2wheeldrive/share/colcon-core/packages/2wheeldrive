@@ -1,1 +1,0 @@
-builtin_interfaces:gazebo_ros:geometry_msgs:joint_state_publisher:joint_state_publisher_gui:nav2_amcl:nav2_lifecycle_manager:nav2_map_server:nav2_msgs:rclpy:robot_localization:robot_state_publisher:rviz2:tf2_ros:xacro

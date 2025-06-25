@@ -154,7 +154,11 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_share = FindPackageShare(package='2wheeldrive').find('2wheeldrive')
+    pkg_urdf = FindPackageShare(package='amr_urdf_v3').find('amr_urdf_v3')
+
     default_model_path = os.path.join(pkg_share, 'src', '2wheeldrive.urdf')
+    #default_model_path = os.path.join(pkg_urdf, 'urdf', 'amr_urdf_v3.urdf')
+    
     default_rviz_config_path = os.path.join(get_package_share_directory('nav2_bringup'), 'rviz', 'nav2_default_view.rviz')    
     default_map_yaml_path = '/home/shriya/ros2_ws/src/2wheeldrive/maps/mapfinal.yaml'
      
@@ -221,9 +225,9 @@ def generate_launch_description():
     parameters=[{'use_sim_time': True}],
     output='screen'  
 )
+ 
 
-
-    map_server = Node( 
+    map_server = Node(  
         package='nav2_map_server',
         executable='map_server',
         name='map_server',

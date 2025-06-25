@@ -1,1 +1,0 @@
-/home/shriya/ros2_ws/src/2wheeldrive/maps/create_test_map.py

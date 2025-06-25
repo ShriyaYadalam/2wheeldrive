@@ -1,1 +1,0 @@
-/home/shriya/ros2_ws/src/2wheeldrive/build/2wheeldrive/ament_cmake_environment_hooks/local_setup.sh
