@@ -180,7 +180,7 @@
         <x>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>2e-4</stddev>
+            <stddev>1e-5</stddev>
             <bias_mean>0.0000075</bias_mean>
             <bias_stddev>0.0000008</bias_stddev>
           </noise>
@@ -188,7 +188,7 @@
         <y>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>2e-4</stddev>
+            <stddev>1e-5</stddev>
             <bias_mean>0.0000075</bias_mean>
             <bias_stddev>0.0000008</bias_stddev>
           </noise>
@@ -206,7 +206,7 @@
         <x>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
+            <stddev>1e-5</stddev>
             <bias_mean>0.1</bias_mean>
             <bias_stddev>0.001</bias_stddev>
           </noise>
@@ -214,7 +214,7 @@
         <y>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
+            <stddev>1e-5</stddev>
             <bias_mean>0.1</bias_mean>
             <bias_stddev>0.001</bias_stddev>
           </noise>
@@ -222,7 +222,7 @@
         <z>
           <noise type="gaussian">
             <mean>0.0</mean>
-            <stddev>1.7e-2</stddev>
+            <stddev>1e-5</stddev>
             <bias_mean>0.1</bias_mean>
             <bias_stddev>0.001</bias_stddev>
           </noise>
@@ -249,8 +249,8 @@
     <max_wheel_acceleration>1.0</max_wheel_acceleration>
 
     <publish_odom>true</publish_odom>
-    <publish_odom_tf>true</publish_odom_tf> 
-    <publish_wheel_tf>true</publish_wheel_tf>
+    <publish_odom_tf>true</publish_odom_tf> <!--true--> <!-- EKF publishes this main odom-> baselink TF-->
+    <publish_wheel_tf>true</publish_wheel_tf> <!--true-->
 
     <odometry_frame>odom</odometry_frame>
     <robot_base_frame>base_link</robot_base_frame>

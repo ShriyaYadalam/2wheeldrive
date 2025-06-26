@@ -257,6 +257,36 @@ def generate_launch_description():
   
     )
 
+#     slam_node = Node(
+#     package='slam_toolbox',
+#     executable='async_slam_toolbox_node',
+#     name='slam_toolbox',
+#     output='screen',
+#     parameters=[slam_params],
+#     remappings=[
+#         ('odom', '/odometry/filtered'),  # Remap odom topic to EKF output
+#     ]
+# )
+    
+
+#     robot_localization_node = Node(
+#     package='robot_localization',
+#     executable='ekf_node',
+#     name='ekf_filter_node',
+#     output='screen',
+#     parameters=[{
+#         'frequency': 30.0,
+#         'two_d_mode': True,
+#         'publish_tf': True,
+#         'odom_frame': 'odom',
+#         'base_link_frame': 'base_link',
+#         'world_frame': 'odom',
+#         'odom0': '/demo/odom',
+#         'odom0_config': [True, True, False, False, False, True, True, True, False, False, False, True, False, False, False],
+#         'use_sim_time': LaunchConfiguration('use_sim_time')
+#     }]
+# )
+
     amcl = Node(
         package='nav2_amcl',  
         executable='amcl',
@@ -323,9 +353,9 @@ def generate_launch_description():
         joint_state_publisher_gui_node, 
         spawn_entity,
         rviz_node,   
+        static_tf_map_odom, 
         robot_localization_node, 
 
-        # static_tf_map_odom, 
           
         # Start navigation nodes with delay    
         TimerAction( 
