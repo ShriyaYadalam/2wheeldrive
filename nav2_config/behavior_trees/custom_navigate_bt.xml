@@ -24,17 +24,18 @@
         <GoalUpdated/>
         <RoundRobin name="RecoveryActions">
         
-          <BackUp backup_dist="0.30" backup_speed="0.05"/> <!--First backup and then spin-->
-
-          <Spin spin_dist="1.57"/>
-
-          <Wait wait_duration="3"/> 
 
           <Sequence name = "Backup+Spin">
             <BackUp backup_dist = "0.20" backup_speed="0.1"/>
             <Spin spin_dist = "1.57"/>
           </Sequence>
 
+          <BackUp backup_dist="0.30" backup_speed="0.05"/> <!--First backup and then spin-->
+
+          <Spin spin_dist="1.57"/>
+
+          <Wait wait_duration="3"/> 
+ 
           <Sequence name="ClearingActions">
             <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
             <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
