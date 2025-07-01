@@ -8,6 +8,7 @@
   <BehaviorTree ID="MainTree">
 
     <RecoveryNode number_of_retries="2" name="NavigateRecovery"> <!--reduce number of retries??-->
+    <Fallback name = "MainFallback">
 
       <PipelineSequence name="NavigateWithReplanning">
         <RateController hz="1.0">
@@ -37,7 +38,7 @@
 
           <BackUp backup_dist="0.30" backup_speed="0.05"/> <!--First backup and then spin-->
 
-          <Spin spin_dist="0.785"/>
+          <Spin spin_dist="1.57"/>
 
           <Wait wait_duration="3"/> 
  
@@ -48,7 +49,7 @@
 
         </RoundRobin>
       </ReactiveFallback>
-      
+      </Fallback>
     </RecoveryNode>
     
   </BehaviorTree>
