@@ -1,5 +1,3 @@
-<img width="1786" height="907" alt="image" src="https://github.com/user-attachments/assets/1e7cd7da-ce22-4d50-b27b-2bbdd0a01d03" /># Autonomous Mobile Robot (AMR) Project
-
 This project documents the development of an Autonomous Mobile Robot (AMR) powered by a Raspberry Pi 5. The robot utilizes ROS 2 (Humble) running within a Docker container to manage sensor processing, control, and autonomous navigation.
 
 ## Key Features
